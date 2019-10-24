@@ -117,7 +117,7 @@ extension AZTableViewController {
     }
     
     @objc open func AZtableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableViewAutomaticDimension
+        return UITableView.automaticDimension
     }
     
     @objc(tableView:cellForRowAtIndexPath:)
