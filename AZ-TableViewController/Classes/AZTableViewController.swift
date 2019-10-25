@@ -45,7 +45,7 @@ open class AZTableViewController: UIViewController {
         
         loadNextPageLoaderCell(nibName: "LoadingTableViewCell" , bundle: bundle)
         loadErrorView(nibName: "ErrorView", bundle: bundle)
-//        loadNoResultView(nibName: "NoResultView", bundle: bundle)
+        loadNoResultView(nibName: "NoResultView", bundle: bundle)
         loadLoadingView(nibName: "LoadingView" , bundle: bundle)
     }
     
@@ -66,11 +66,11 @@ open class AZTableViewController: UIViewController {
     }
     
     
-//    public func loadNoResultView(nibName: String ,bundle: Bundle? = Bundle.main) {
-//        if noResults == nil {
-//            noResults = bundle?.loadNibNamed(nibName, owner: self, options: nil)?.first as? UIView
-//        }
-//    }
+    public func loadNoResultView(nibName: String ,bundle: Bundle? = Bundle.main) {
+        if noResults == nil {
+            noResults = bundle?.loadNibNamed(nibName, owner: self, options: nil)?.first as? UIView
+        }
+    }
     
     
     public func loadLoadingView(nibName: String ,bundle: Bundle? = Bundle.main) {
