@@ -58,7 +58,7 @@ extension ViewController {
             }
                 
             else if let error = error {
-                self.errorDidOccured(error: error)
+                self.errorDidOccured(error: error, tintColor: .blue)
             }
         }
     }
@@ -79,7 +79,7 @@ extension ViewController {
                 }
             }
             else if let error = error {
-                self.errorDidOccured(error: error)
+                self.errorDidOccured(error: error, tintColor: .blue)
             }
         }
         
